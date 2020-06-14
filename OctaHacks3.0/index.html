@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> OctaHacks 3.0 </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Octahacks, hackathon, chitkara university, coding, event, summer, 36 hours"/>
+    <meta name="Description" content="OctaHacks is " />
+    <link rel="icon" href="assets/Images/icon.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+    <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+</head>
+<body>
+
+    <!--Landing Section Starts -->    
+        <section class="contentt parallax bg1">
+            <div class="container bg2s">
+                <div class="row">
+                    <div class="col-md-12">
+                        <center>
+                        <img id="logo" src="assets/Images/octahacks.png" style="margin-top: 0%;margin-left: 20%;"><br><br>
+                        <div class="place-date" style="margin-left: 200px !important;"><i class="fa fa-calendar"></i> 4-5th September, 2020 <br> <i class="fa fa-map-marker"></i> Chitkara University, Rajpura </div>
+                        <br><br>
+                        <!--<button class="register-btn" value="Register">
+                        <font>Register</font>
+                        </button>-->
+                        </center>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+ 
+    <!--LANDING SECTION ENDS-->
+
+    <!--ABOUT SECTION STARTS-->
+    <section class="aboutsection pt-5" data-aos="fade-up">
+        <p class="section-heading font-weight-bold my-5">What is OctaHacks?</p>
+        <center>
+        <div class="about-row">
+        <span class="abouttext"> OctaHacks is the annual flagship event of DSC, Chitkara University, Rajpura, where innovators get an opportunity to merge their creative ideas with their technical skills to build something exemplary. It's a place where your ideas will get acknowledged. 
+        <br><br>
+          OctaHacks is a 30-Hour hackathon that takes place in Chitkara University, Rajpura. With it's third edition,<font style="color:#8847dd;"> OctaHacks 3.0 </font>coming this September, we promise to make it even bigger and better.
+        </span>
+        <br> <br>
+            <p class="count-text m-4"> COUNT EVERY SECOND UNTIL THE HACKATHON</p> 
+        </div>  
+            <div id="timer" style="border: 1px solid #8847dd;">
+              <div id="days"></div> 
+              <div id="hours"></div>
+              <div id="minutes"></div>
+              <div id="seconds"></div>
+            </div>
+            </center>
+            <!--SCRIPT-->
+            <script src="assets/scripts/count.js"></script>
+    </section>
+    <!--ABOUT SECTION ENDS-->
+
+    <!--Timeline Section-->
+    <section class="timelinesection pb-5" data-aos="fade-up">
+        <p class="section-heading my-5">Timeline</p>
+        <div class="timeline mb-5">
+          <div class="timeline-container left" data-aos="fade-in" id="bulb1">
+            <div class="timeline-content" onmousemove="hover1()" onmouseout="hoverout1()">
+              <h2>5th August 2020<i class="fa fa-sign-in icon1" style="transform: translateX(130px);" id="fa1"></i></h2>
+              <p>Registrations open and submissions begin.</p>
+            </div>
+          </div>
+          <div class="timeline-container right" data-aos="fade-in">
+            <div class="timeline-content" onmousemove="hover2()" onmouseout="hoverout2()">
+              <h2>28th August 2020<i class="fa fa-times-circle-o icon2" style="transform: translateX(110px);" id="fa2"></i></h2>
+              <p>Registrations closes - Last day to register.</p>
+            </div>
+          </div>
+          <div class="timeline-container left" data-aos="fade-in">
+            <div class="timeline-content" onmousemove="hover3()" onmouseout="hoverout3()">
+              <h2>2nd September 2020<i class="fa fa-user-times icon3" style="transform: translateX(50px);" id="fa3"></i></h2>
+              <p>Selected contestants receive RSVP email. </p>
+            </div>
+          </div>
+          <div class="timeline-container right" data-aos="fade-in">
+            <div class="timeline-content" onmousemove="hover4()" onmouseout="hoverout4()">
+              <h2>4th September 2020<i class="fa fa-bell icon4" style="transform: translateX(70px);" id="fa4"></i></h2>
+              <p>Participants arrive at Chitkara University and hack begins.</p>
+            </div>
+          </div>
+          <div class="timeline-container left" data-aos="fade-in">
+            <div class="timeline-content" onmousemove="hover5()" onmouseout="hoverout5()">
+              <h2>5th September 2020<i class="fa fa-trophy icon5" style="transform: translateX(70px);" id="fa5"></i></h2>
+              <p>Declaration of Results.</p>
+              <script>
+                    function hover1(){
+                        document.getElementById("fa1").style.color="white";
+                        document.getElementById("fa1").style.border="2px solid #8847dd";
+                        document.getElementById("fa1").style.borderRadius="100%";
+                        document.getElementById("fa1").style.padding="1%";
+                    }
+                    function hoverout1(){
+                        document.getElementById("fa1").style.color="#8847dd";
+                        document.getElementById("fa1").style.border="0px solid black";
+                        document.getElementById("fa1").style.borderRadius="0%";
+                        document.getElementById("fa1").style.padding="0%";
+                    }
+                    
+
+
+                    function hover2(){
+                        document.getElementById("fa2").style.color="white";
+                        document.getElementById("fa2").style.border="2px solid #8847dd";
+                        document.getElementById("fa2").style.borderRadius="100%";
+                        document.getElementById("fa2").style.padding="1%";
+                    }
+                    
+                    function hoverout2(){
+                        document.getElementById("fa2").style.color="#8847dd";
+                        document.getElementById("fa2").style.border="0px solid black";
+                        document.getElementById("fa2").style.borderRadius="0%";
+                        document.getElementById("fa2").style.padding="0%";
+                    }
+                    
+
+
+                    function hover3(){
+                        document.getElementById("fa3").style.color="white";
+                        document.getElementById("fa3").style.border="2px solid #8847dd";
+                        document.getElementById("fa3").style.borderRadius="100%";
+                        document.getElementById("fa3").style.padding="2%";
+                    }
+                    
+                    function hoverout3(){
+                        document.getElementById("fa3").style.color="#8847dd";
+                        document.getElementById("fa3").style.border="0px solid black";
+                        document.getElementById("fa3").style.borderRadius="0%";
+                        document.getElementById("fa3").style.padding="0%";
+                    }
+                    
+
+
+                    function hover4(){
+                        document.getElementById("fa4").style.color="white";
+                        document.getElementById("fa4").style.border="2px solid #8847dd";
+                        document.getElementById("fa4").style.borderRadius="100%";
+                        document.getElementById("fa4").style.padding="1%";
+                    }
+                    
+                    function hoverout4(){
+                        document.getElementById("fa4").style.color="#8847dd";
+                        document.getElementById("fa4").style.border="0px solid black";
+                        document.getElementById("fa4").style.borderRadius="0%";
+                        document.getElementById("fa4").style.padding="0%";
+                    }
+                    
+
+
+                    function hover5(){
+                        document.getElementById("fa5").style.color="white";
+                        document.getElementById("fa5").style.border="2px solid #8847dd";
+                        document.getElementById("fa5").style.borderRadius="100%";
+                        document.getElementById("fa5").style.padding="1%";
+                    }
+                    function hoverout5(){
+                        document.getElementById("fa5").style.color="#8847dd";
+                        document.getElementById("fa5").style.border="0px solid black";
+                        document.getElementById("fa5").style.borderRadius="0%";
+                        document.getElementById("fa5").style.padding="0%";
+                    }
+              </script>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!--Timeline section ends-->
+
+    <section id="prev-photo" class="bg2">
+        <div>
+            <h1 data-aos="zoom-in">OCTAHACKS 2.0</h1>
+        </div> 
+    </section>
+    <img src="assets/Images/octahacks2.jpg" class="octa2">
+
+
+    <!-- Tracks Section-->
+    <section id="tracks" style="height:auto;" data-aos="fade-up">
+    <p class="section-heading py-5 my-5" data-aos="fade-up"> Tracks</p>
+    <center>
+    <div class="row" style="width:80vw;">
+        <div class="col-md-3" data-aos="fade-up">
+            <div class="card text-white">
+                <div class="card-content">
+                    <img class="card-img-top" src="assets/Images/tracks/city.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">SMART CITY</h5>
+                    </div>
+                </div>
+                <div class="card-description">
+                    <h6 id="description-para" class="card-title small">
+                        Smart Cities is a space in which developers, entrepreneurs, designers, professors, researchers and persons interested in making their city a better place can gather to build in a collaboratively fashion a solution that makes our city more efficient and intelligent.
+                    </h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up">
+            <div class="card text-white">
+                <div class="card-content">
+                    <img class="card-img-top" src="assets/Images/tracks/security.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">SECURITY</h5>
+                    </div>
+                </div>
+                <div class="card-description">
+                    <h6 id="description-para" class="card-title small" style="padding: 20px;">
+                        Security-related issues are growing. The programs for public safety lack: understanding of the security threats, vulnerabilities, and risks associated with the evolving systems; The increased use of automated technologies is also driving an increase in the advancement of the need for proper security systems.
+                    </h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up">
+            <div class="card text-white">
+                <div class="card-content">
+                    <img class="card-img-top" src="assets/Images/tracks/finance.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">BANKING AND FINANCE</h5>
+                    </div>
+                </div>
+                <div class="card-description">
+                    <h6 id="description-para" class="card-title small">
+                        From mobile payments to internet banking, an increased number of consumers are adopting fintech solutions today, and therefore there are a lot of exciting career options in this space.
+                    </h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up">
+            <div class="card text-white">
+                <div class="card-content">
+                    <img class="card-img-top" src="assets/Images/tracks/health.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">HEALTH</h5>
+                    </div>
+                </div>
+                <div class="card-description">
+                    <h6 id="description-para" class="card-title small">
+                        The increase in patients has led to the decrease in the relative number of doctors per patient which results in a vicious cycle where ignored or delayed diagnostics of an ailment makes the patient more dependent on doctor’s check-up. Some also cannot afford to visit a doctor.
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="width:80vw;">
+        <div class="col-md-3" data-aos="fade-up">
+            <div class="card text-white">
+                <div class="card-content">
+                    <img class="card-img-top" src="assets/Images/tracks/environment.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">ENVIRONMENT</h5>
+                    </div>
+                </div>
+                <div class="card-description">
+                    <h6 id="description-para" class="card-title small">
+                        We are advancing in technology at a very rapid rate. But this development has made our nature suffer. It is considered more important to expand cities than to save trees.
+                    </h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up">
+            <div class="card text-white">
+                <div class="card-content">
+                    <img class="card-img-top" src="assets/Images/tracks/education.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">EDUCATION</h5>
+                    </div>
+                </div>
+                <div class="card-description">
+                    <h6 id="description-para" class="card-title small">
+                        A large part of our population is still not able to receive proper education due to lack of resources. Education is important for everyone, but only a few have access to it. Children of poor families tend to move frequently, which disrupts their education.                    </h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up">
+            <div class="card text-white">
+                <div class="card-content">
+                    <img class="card-img-top" src="assets/Images/tracks/business.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">BUSINESS</h5>
+                    </div>
+                </div>
+                <div class="card-description">
+                    <h6 id="description-para" class="card-title small">
+                        As technology is evolving, Businesses are accelerating their investments in innovation and digital advancements. Today, in this fast trending world, many innovative ideas have turned into significant business adventures. Here, we are looking forward to our next Facebook, Uber or Zomato.
+                    </h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up">
+            <div class="card text-white">
+                <div class="card-content">
+                    <img class="card-img-top" src="assets/Images/tracks/agriculture.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">AGRICULTURE</h5>
+                    </div>
+                </div>
+                <div class="card-description">
+                    <h6 id="description-para" class="card-title small">
+                        Agricultural operations including animal and crop farming are essential contributors to depletion of natural resources' quality and quantity. Some problems in agriculture are instability, cropping pattern, land ownership, techniques of farming, marketing of agricultural products, etc.
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    </center>
+    </section>
+
+    <section class="previous">
+        <p class="section-heading my-5 pt-5" data-aos="fade-up">Glimpses from OctaHacks 2.0</p>
+        <div class="container">
+            <center>
+            <div class="row" data-aos="fade-up">
+                <div class="col-md-3 col-sm-6 col-xs-6 counts edg">
+                    <i class="fa fa-handshake-o fa-2x"></i>
+                    <div class="number">
+                        10+
+                    </div>
+                    <div class="num-text">
+                        Sponsors
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 counts1 cntr">
+                    <i class="fa fa-group fa-2x"></i>
+                    <div class="number">
+                        60+
+                    </div>
+                    <div class="num-text">
+                        Teams
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 counts cntr">
+                    <i class="fa fa-user fa-2x"></i>
+                    <div class="number">
+                        250+
+                    </div>
+                    <div class="num-text">
+                        Participants
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 counts1 edg">
+                    <i class="fa fa-rocket fa-2x"></i>
+                    <div class="number">
+                        8+
+                    </div>
+                    <div class="num-text">
+                        Tracks
+                    </div>
+
+                </div>
+            </div>
+            </center>            
+        </div>
+    </section>
+
+    <center>   
+        <img class="collage py-5 my-5" src="assets/Images/col.gif" data-aos="fade-up" style="border: 1px solid #8847dd;box-shadow: 0px 0px 100px #8847dd;width: cover;"/> 
+    </center>  
+
+    <!--Sponsor-->
+    <section>
+        <center>
+        <div class="sponsor-us py-5 m-0 ask" data-aos="fade-up">
+            <div class="ask2">
+            <p class="sponsortext py-2"> Want to sponsor <font style="font-weight:bolder"><i>OctaHacks 3.0?</i></font><br> </p>
+            <p class="pb-2">Drop us an email at :</p>
+            <p class="pb-4"><a href="mailto:muskan1062.cse18@chitkara.edu.in" style="color: rgb(255, 0, 0);" class="email-us"><i class="fa fa-envelope pr-2"></i>muskan1062.cse18@chitkara.edu.in</a><br>
+            <a href="mailto:yashank1050.cse18@chitkara.edu.in" style="color: red;" class="email-us"><i class="fa fa-envelope pr-2"></i>yashank1050.cse18@chitkara.edu.in</a></p>
+            <p><a href="#" style="font-size: 20px;background: white;border-radius: 100px;padding-left: 5%;padding-right: 5%;border-bottom: 5px solid rgb(255, 0, 0); color: red;">Download Brochure</a></p>
+        </div>
+        </div>
+        </center>
+    </section>
+
+    <!--Previous Sponsors-->
+    <section>
+        <p class="section-heading p-5 my-5" data-aos="fade-up"> Our Previous Sponsors</p>
+        <center>
+        <div class="container">
+            <div class="row" style="min-height: 25vh" data-aos="fade-up">
+                <div class="col-md-3 my-4">
+                    <img class="responsive" id="sponsor-logo" src="assets/Images/sponsors/acm.png" style="width:40%;" />
+                </div>
+                <div class="col-md-3 my-4">
+                    <img class="responsive" id="sponsor-logo" src="assets/Images/sponsors/sketch.png" style="width:40%;" />
+                </div>
+                <div class="col-md-3 my-4">
+                    <img class="responsive" id="iei" src="assets/Images/sponsors/iei.png" style="width:40%;" />
+                </div>
+                <div class="col-md-3 my-4">
+                    <img class="responsive" id="sponsor-logo" src="assets/Images/sponsors/jetbrains.png" style="width:35%;" />
+                </div>
+            </div>
+            <div class="row" style="min-height: 20vh" data-aos="fade-up">
+                <div class="col-md-3 my-4">
+                    <img class="responsive" id="sponsor-logo" src="assets/Images/sponsors/cleartrip.png" style="width:50%;" />
+                </div>
+                <div class="col-md-3 my-4">
+                    <img class="responsive" id="sponsor-logo" src="assets/Images/sponsors/codechef.png" style="width:50%;" />
+                </div>
+                <div class="col-md-3 my-4">
+                    <img class="responsive" id="sponsor-logo" src="assets/Images/sponsors/newgen.png" style="width:55%;" />
+                </div>
+                <div class="col-md-3 my-4">
+                    <img class="responsive" id="sponsor-logo" src="assets/Images/sponsors/hyperdart.png" style="width:45%;" />
+                </div>
+            </div>
+            <div class="row" style="min-height: 20vh" data-aos="fade-up">
+                <div class="col-md-3 my-4">
+                    <img class="responsive" id="sponsor-logo" src="assets/Images/sponsors/ninja.png" style="width:50%;" />
+                </div>
+                <div class="col-md-3 my-4">
+                    <img class="responsive" id="sponsor-logo" src="assets/Images/sponsors/bugsee.png" style="width:50%;" />
+                </div>
+                <div class="col-md-3 my-4">
+                    <img class="responsive" id="sponsor-logo" src="assets/Images/sponsors/wolfram.png" style="width:55%;background-color: white" />
+                </div>
+                <div class="col-md-3 my-4">
+                    <img class="responsive" id="sponsor-logo" src="assets/Images/sponsors/topcoder.png" style="width:45%;" />
+                </div>
+            </div>
+            <div class="row" style="min-height: 30vh" data-aos="fade-up">
+                <div class="col-md-3 my-4">
+                    <img class="responsive" id="sponsor-logo" src="assets/Images/sponsors/upgrad.png" style="width:40%;" />
+                </div>
+                <div class="col-md-3 my-4" style="background-color: black">
+                    <img class="responsive" id="sponsor-logo" src="assets/Images/sponsors/gatsbylogo.png" style="width:40%" />
+                </div>
+                <div class="col-md-3 my-4" >
+                    <img class="responsive" id="sponsor-logo" src="assets/Images/sponsors/techlogo.png" style="width:60%;" />
+                </div>
+                <div class="col-md-3 mt-4 mb-5">
+                    <img class="responsive" id="sponsor-logo" src="assets/Images/sponsors/curin.png" style="width:35%;background-color: white;" />
+                </div>
+            </div>
+        </div>
+        </center>
+    </section>
+
+    <!--FAQs Section-->
+    <section>
+        <div class="container p-5">
+            <p class="section-heading font-weight-bold pb-5 mb-4 pt-5" data-aos="fade-up"> F<font style="color: #8847dd;">. </font>A<font style="color: #8847dd;">. </font>Q<font style="color: #8847dd;">.</font></p>
+            <div class="row">
+                <div class="col-md-6 col-sm-12" data-aos="fade-up">
+                    <center><img class="responsive pb-3" id="faq" src="assets/Images/faq3.png" style="border-radius: 50px 50px 0px 0px;"/></center>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="container">
+                        <div class="accordion">
+                            <div class="accordion-item" data-aos="fade-up">
+                                <a class="acc">What is the required team size?</a>
+                                <div class="content">
+                                    <p>2-5 members.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item" data-aos="fade-up">
+                                <a class="acc">Can I start working on my hack before the hackathon?</a>
+                                <div class="content">
+                                    <p>No. In the interest of fairness, students should not be working on their projects before the hackathon begins. However, you can familiarize yourself with all the tools and technologies you intend to use.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item" data-aos="fade-up">
+                                <a class="acc">Can the team members be from different colleges?</a>
+                                <div class="content">
+                                    <p>Yes, we believe in healthy team spirit which will be ensured if you are allowed to work with the team of your choice.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item" data-aos="fade-up">
+                                <a class="acc">Can I leave the venue before the event is over?</a>
+                                <div class="content">
+                                    <p>You may leave the venue to get some fresh air, however, you are not allowed to leave the campus premises.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item" data-aos="fade-up">
+                                <a class="acc">Do you provide accommodation?</a>
+                                <div class="content">
+                                    <p>Yes, we provide accommodation if any participant requires it. We believe in providing you comfort to make your experience extraordinary.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <center><a href="#" class="code" target="_blank" data-aos="fade-up"><p class="section-heading p-5 my-5" data-aos="fade-up">Code Of Conduct</p></center>
+    </section>    
+    <script src="assets/scripts/faqs.js"></script>
+
+    <section class="end-section mt-5">
+        <div class="container pt-5 pb-5">
+            <center>
+            <div class="row">
+                <div class="col-md-4 col-sm-12 mb-4 map" data-aos="zoom-in">
+                    <div class="end-card">
+                    <p style="color: #b889f7;">Venue</p>
+                    <br>
+                    <p class="endc"><a href="https://g.page/ChitkaraU?share" class="location">Chitkara University
+                    <br>Rajpura, Punjab</a>
+                    </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 mb-4 call" data-aos="zoom-in">
+                    <div class="end-card">
+                    <p style="color: #b889f7;">Contact Us</p>
+                    <br>
+                    <p class="endc"><a href="tel:+91-9466649120" class="call-us">+91 9466649120</a>
+                    <br><a href="tel:+91-9023851210" class="call-us">+91 9023851210</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 mb-4 codes" data-aos="zoom-in">
+                    <div class="end-card">
+                    <p style="color: #b889f7;">Website Created By</p>
+                    <br>
+                    <p class="endc">Muskan Goyal <a href="https://www.linkedin.com/in/goyalmuskan" target="_blank" text-decoration="none"> <i class="fa fa-linkedin" style="color: rgb(57, 151, 238);" aria-hidden="true"></i></a>
+                    <br>Ishan Sharma <a href="https://www.linkedin.com/in/ishandeveloper" target="_blank" text-decoration="none"><i class="fa fa-linkedin" style="color: rgb(57, 151, 238);" aria-hidden="true"></i></a>
+                    <br>Yashank <a href="https://www.linkedin.com/in/yashank18" target="_blank" text-decoration="none"><i class="fa fa-linkedin" style="color: rgb(57, 151, 238);" aria-hidden="true"></i></a></p>          
+                    </div>              
+                </div>
+            </div>
+            </center>
+        </div>
+    </section>
+
+    <footer>
+        <center>
+        <p>
+            Copyright OctaHacks &copy; 3.0
+            <script>
+                document.write(new Date().getFullYear());
+            </script> | All rights reserved
+        </p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/gdsc.cu/" class="fa fa-facebook" target="_blank"></a>
+            <a href="#" class="fa fa-linkedin" target="_blank"></a>
+            <a href="https://www.instagram.com/dsc_ciet/" class="fa fa-instagram" target="_blank"></a>
+        </div>
+        </center>
+    </footer>
+
+
+<script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script><script src="assets/scripts/animation.js"></script>
+</body>
+</html>

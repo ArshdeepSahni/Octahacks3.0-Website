@@ -1,0 +1,856 @@
+html,
+body {
+  height: 100%;
+  letter-spacing: 1.5px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Maven Pro', sans-serif;
+  -webkit-tap-highlight-color: #e0e0e033;
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+/*CSS FOR CUSTOM SCROLLBAR*/
+
+::-webkit-scrollbar {
+  width: 5px;
+  transition: 1s;
+}
+::-webkit-scrollbar:hover {
+  transition: 1s;
+  width: 15px;
+  height: 85px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8166cd;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 0, 0);
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.static {
+  background: black;
+}
+
+
+/*CSS FOR LANDING SECTION BEGINS*/
+
+.bg1 {
+  background-image: url("../Images/bg.gif");
+  background-size: 100%;
+  position: relative;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+.bg2s{
+  background-image: url("../Images/india.png");
+  background-size: 30%;
+  margin-left: -5%;
+  padding: 10%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+.contentt {
+  position: relative;
+  margin-top: -10px;
+  margin-left: -10px;
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  height: 100vh;
+}
+
+.place-date {
+  color: rgb(226, 212, 212);
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+#logo {
+  width: 430px;
+  filter: drop-shadow(10px 10px 5px rgba(20, 20, 20, 0.603));
+  margin-top: 220px;
+}
+
+@media only screen and (max-width:430px) {
+  #logo {
+    width: 320px;
+  }
+
+  .place-date {
+    font-size: 15px;
+  }
+
+}
+
+
+/*About Section*/
+.aboutsection {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.about-row {
+  max-width: 60%;
+}
+
+.abouttext {
+  color: rgb(211, 203, 203);
+  letter-spacing: 0.1em;
+  font-size: 17px;
+}
+
+.section-heading {
+  color: white;
+  font-size: 52px;
+  text-align: center;
+}
+
+.count-text {
+  color: #8847dd;
+  font-size: 25px;
+}
+
+#timer {
+  display: inline-block;
+  line-height: 1;
+  padding: 20px;
+  box-shadow: 0px 0px 50px inset #ac6dff;
+  transition: 0.2s;
+  border-radius: 50px;
+  animation: border 3s infinite ease-in-out;
+  border: none;
+}
+@keyframes border{
+  50%{
+    box-shadow: 0px 0px 100px inset #ffffff;
+    transition: 0.2s;
+  }
+}
+
+
+span {
+  display: block;
+  font-size: 15px;
+  color: white;
+}
+
+#days {
+  font-size: 70px;
+  color: #8847dd;
+  display: inline-block;
+  line-height: 1;
+  padding: 20px;
+}
+
+#hours {
+  font-size: 70px;
+  color: #8847dd;
+  display: inline-block;
+  line-height: 1;
+  padding: 20px;
+}
+
+#minutes {
+  font-size: 70px;
+  color: #8847dd;
+  display: inline-block;
+  line-height: 1;
+  padding: 20px;
+}
+
+#seconds {
+  font-size: 70px;
+  color: #8847dd;
+  display: inline-block;
+  line-height: 1;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .section-heading {
+    font-size: 35px;
+  }
+
+  .about-row {
+    max-width: 90%;
+    padding: 3px;
+  }
+
+  #minutes,
+  #hours,
+  #days,
+  #seconds {
+    font-size: 30px;
+  }
+
+  .abouttext {
+    text-align: justify;
+  }
+}
+
+@media only screen and (max-width: 456px) {
+  .count-text {
+    font-size: 15px;
+  }
+
+  #minutes,
+  #hours,
+  #days,
+  #seconds {
+    font-size: 2.5em;
+    padding: 8px;
+  }
+
+}
+
+
+/*TIMELINE CSS*/
+.timelinesection {
+  background-color: black;
+  /* Needed for children to be absolutely positioned relative to the ent. */
+  position: relative;
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  overflow-x: hidden;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline h2 {
+  color: #8847dd;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #48128f;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.timeline-content {
+  padding: 20px 30px;
+  background-color: black;
+  position: relative;
+  border-radius: 6px;
+  border: medium solid #48128f;
+  color: white;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .timeline-container {
+    width: 90%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline-container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+/* Media queries - Responsive timeline on screens less than 320px wide */
+@media screen and (max-width:320px) {
+  .timeline-content {
+    width: 120%;
+  }
+
+  #minutes,
+  #hours,
+  #days,
+  #seconds {
+    font-size: 1.5em;
+    padding: 4.5px;
+  }
+}
+
+.bg2 {
+  background-image: url("../Images/octahacks2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+.bg2 h1{
+  color: #48128f8c;
+  text-shadow: 0px 0px 50px #ffffff;
+}
+
+.octa2 {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+#prev-photo {
+  position: relative;
+  height: 60vh;
+}
+
+#prev-photo div {
+  background-color: rgba(0, 0, 0, 0.651);
+  height: 60vh;
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+#prev-photo h1 {
+  padding-top: 18vh;
+  text-align: center;
+  font-size: 8vw;
+}
+
+/*
+#prev-photo h1 span{
+  text-align: center;
+  font-size: 6vw;
+}
+*/
+
+@media only screen and (max-width:900px) {
+  .icon1{
+    margin-left: -15%;
+  }
+  .octa2 {
+    display: block;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  #prev-photo {
+    display: none;
+  }
+}
+
+
+/*Track Cards*/
+.card {
+  height: 250px;
+  margin-bottom: 30px;
+  border-radius: 50px 0px 50px 0px;
+  background: #48128f !important;
+  transition: all ease-in-out 0.8s;
+  border: 10px double rgb(255, 255, 255);
+  cursor: hand;
+  padding-top: 20px;
+  transition: 0.5s;
+  box-shadow: 0px 0px 50px inset black;
+}
+
+.card-content {
+  transition: all ease-in-out 0.8s;
+}
+
+.card-description {
+  opacity: 0;
+  height: 0;
+  display: none;
+  transition: all ease-in-out 0.4s;
+}
+
+.card:hover {
+  border-radius: 0px 50px 0px 50px;
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: 0px 0px 30px inset white;
+  background-color: #000000 !important;
+  border: 1px solid #48128f !important;
+}
+
+.card:hover .card-content {
+  opacity: 0;
+  height: 0;
+  display: none;
+  transition: 0.5s;
+}
+
+.card:hover .card-description {
+  transition: 1s;
+  opacity: 1;
+  height: auto;
+  display: block;
+}
+
+#description-para {
+  text-align: left;
+  padding: 30px;
+  color: #ffffff;
+}
+
+.card-img-top {
+  width: 50%;
+}
+
+@media only screen and (max-width: 864px) and (min-width: 768px) {
+  .card-title {
+    font-size: 9px;
+  }
+
+  #description-para {
+    font-size: 8px;
+  }
+
+  .card-img-top {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 1290px) and (min-width: 865px) {
+  .card-title {
+    font-size: 10px;
+  }
+
+  .card-img-top {
+    margin-top: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+  .card-img-top {
+    width: 30%;
+  }
+}
+
+/*Image Collage*/
+.collage {
+  background-size: cover;
+  height: auto;
+  width: cover;
+}
+
+
+/*FAQs section*/
+.accordion a {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem 3rem 2rem 1rem;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border-top: 1px solid #222222;
+  color: white;
+  transition: 0.5s;
+}
+
+.accordion a:hover,
+.accordion a:hover::after {
+  cursor: pointer;
+  color: #a060f3;
+  transition: 0.5s;
+}
+
+.accordion a::after {
+  font-family: 'Ionicons';
+  content: '\f218';
+  position: absolute;
+  float: right;
+  right: 1rem;
+  font-size: 1rem;
+  color: #48128f;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.accordion a.active::after {
+  font-family: 'Ionicons';
+  content: '\f209';
+  color: #48128f;
+}
+
+.accordion .content {
+  opacity: 0;
+  padding: 0 1rem;
+  max-height: 0;
+  border-bottom: 1px solid #222222;
+  overflow: hidden;
+  clear: both;
+  -webkit-transition: all 0.2s ease 0.15s;
+  -o-transition: all 0.2s ease 0.15s;
+  transition: all 0.2s ease 0.15s;
+  color: white;
+}
+
+.accordion .content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: white;
+}
+
+.accordion .content.active {
+  opacity: 1;
+  padding: 1rem;
+  max-height: 100%;
+  -webkit-transition: all 0.35s ease 0.15s;
+  -o-transition: all 0.35s ease 0.15s;
+  transition: all 0.35s ease 0.15s;
+  color: white;
+}
+
+.code {
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 1px solid #9f9da1;
+  text-decoration: none;
+  color: #8847dd;
+}
+
+.code:hover {
+  text-decoration: none;
+  color: white;
+  transition: 0.6s;
+}
+
+#faq {
+  width: 90%;
+}
+
+/*End cards */
+.endc {
+  color: white;
+}
+
+.end-card {
+  padding-top: 40px;
+  width: 200px;
+  height: 250px;
+  box-shadow: 0 10px 50px 0 rgba(70, 69, 69, 0.2);
+}
+.map{
+  background: url(../Images/map2.png) no-repeat;
+}
+.call{
+  background: url(../Images/call.png) no-repeat;
+  background-size: 70%;
+}
+.codes{
+  background: url(../Images/code.png) no-repeat;
+}
+.location {
+  text-decoration: none;
+  color: white;
+}
+
+.location:hover {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+}
+
+.call-us {
+  text-decoration: none;
+  color: white;
+}
+
+.call-us:hover {
+  text-decoration: none;
+  color: white;
+}
+
+/*Sponsors*/
+.ask{
+  margin-bottom: -5000px;
+  background:  #48128f !important;
+  color: #000;
+}
+.ask2{
+  color: #000;
+  margin-top: -40px;
+  box-shadow: 0px -50px 100px inset black;
+  width: 98%;
+  margin-left: 1%;
+  border-radius: 0% 0% 1000% 1000%;
+  background: rgb(255, 255, 255);
+}
+.counts{
+  border: 1px solid white;
+  padding-top: 50px;
+  border-radius: 0px 1000px 1000px 0px;
+}
+.edg{
+  background: #000000;
+  animation: col 1s infinite ease-in-out;
+}
+@keyframes col{
+  50%{
+    background: #48128f;
+  }
+}
+.counts1{
+  border: 1px solid white;
+  padding-top: 50px;
+  border-radius: 1000px 0px 0px 1000px;
+}
+.cntr{
+  background: #48128f;
+  animation: col1 1s infinite ease-in-out;
+}
+@keyframes col1{
+  50%{
+      background: #000;
+  }
+}
+.number {
+  font-size: 45px;
+  color: white;
+  padding: 5px;
+}
+
+.num-text {
+  color: white;
+  font-size: 15px;
+  padding-bottom: 40px;
+}
+
+.previous .fa {
+  color: #ffffff;
+}
+
+.sponsor-us {
+  width: 85%;
+  height: auto;
+  background-color: #48128f;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sponsor-us a {
+  color: white;
+  text-decoration: none;
+}
+
+#sponsor-logo {
+  filter: grayscale(100%);
+  border-radius: 20px !important;
+  transition: 0.5s;
+}
+
+#sponsor-logo:hover {
+  filter: grayscale(0%);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#iei {
+  filter: saturate(0.5);
+  border-radius: 20px !important;
+  transition: 0.5s;
+}
+
+#iei:hover {
+  filter: grayscale(0%);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.sponsortext {
+  font-size: 35px;
+}
+
+@media only screen and (max-width:600px) {
+  .collage{
+    width: 490px;
+    height: auto;
+  }
+  .sponsor-us {
+    font-size: 17px;
+  }
+
+  .sponsortext {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  .email-us {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width:320px) {
+  .email-us {
+    font-size: 10px;
+  }
+}
+
+/*Makes all the images undraggable*/
+img {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+
+/*Footer*/
+footer {
+  margin-top: 80px;
+}
+
+footer p {
+  color: rgba(255, 255, 255, 0.562);
+  text-align: center;
+}
+
+.social-media {
+  margin-bottom: 20px;
+}
+
+.social-media a {
+  color: #48128f;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 10px 10px;
+  transition: 0.5s;
+  opacity: 0.8;
+}
+
+.social-media a:hover {
+  transition: 0.5s;
+  color: white;
+  opacity: 1;
+}
